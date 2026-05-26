@@ -143,14 +143,17 @@ $role = $_SESSION['role'] ?? '';
 
                 <?php endif; ?>
 
+
+                
+
+                <div class="sb-sidenav-footer">
+                <div class="small">Logged in as:</div>
+                <?php echo $name ?? 'User'; ?> (<?php echo $role ?? 'Role'; ?>)
+                </div>
+
                 
 
             </div>
-        </div>
-
-        <div class="sb-sidenav-footer">
-            <div class="small">Logged in as:</div>
-            <?php echo $name ?? 'User'; ?> (<?php echo $role ?? 'Role'; ?>)
         </div>
 
     </nav>
